@@ -1,44 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="manifest" href="manifest.json" />
-  <title>Dragonsweeper</title>
+  <meta charset="UTF-8">
+  <title>Test Page</title>
 </head>
 <body>
-  <h1>Loading Dragonsweeper...</h1>
-  <pre id="log"></pre>
+  <h1>If you see this, basic HTML is working</h1>
+  <pre id="log">If this line disappears, JS ran</pre>
 
   <script>
-    const log = (msg) => {
-      console.log(msg);
-      document.getElementById('log').textContent += msg + '\n';
-    };
-
-    if ('serviceWorker' in navigator) {
-      navigator.serviceWorker.register('service-worker.js')
-        .then(reg => log('SW registered: ' + reg.scope))
-        .catch(err => log('SW registration failed: ' + err));
-    } else {
-      log('Service worker not supported.');
-    }
-
-    try {
-      const s1 = document.createElement('script');
-      s1.src = 'game.js';
-      s1.onload = () => log('Loaded game.js');
-      s1.onerror = () => log('Failed to load game.js');
-      document.body.appendChild(s1);
-
-      const s2 = document.createElement('script');
-      s2.src = 'gamelib.js';
-      s2.onload = () => log('Loaded gamelib.js');
-      s2.onerror = () => log('Failed to load gamelib.js');
-      document.body.appendChild(s2);
-    } catch (e) {
-      log('JS loading error: ' + e);
-    }
+    document.getElementById('log').textContent = 'JS executed!';
   </script>
 </body>
 </html>
