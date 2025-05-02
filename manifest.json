@@ -1,0 +1,37 @@
+{
+  "name": "Dragonsweeper",
+  "short_name": "Dragonsweeper",
+  "description": "A Minesweeper game that requires observation. Make sure to read the monsternomicon.",
+  "start_url": "https://html-classic.itch.zone/html/12786123/index.html",
+  "display": "standalone",
+  "background_color": "#293133",
+  "theme_color": "#445464",
+  "icons": [
+    {
+      "src": "icons/icon-15x15.jpeg",
+      "sizes": "15x15",
+      "type": "image/jpeg"
+    },
+    {
+      "src": "icons/icon-16x16.jpeg",
+      "sizes": "16x16",
+      "type": "image/jpeg"
+    },
+    {
+      "src": "icons/icon-32x32.jpeg",
+      "sizes": "32x32",
+      "type": "image/jpeg"
+    },
+    {
+      "src": "icons/icon-132x132.jpeg",
+      "sizes": "132x132",
+      "type": "image/jpeg"
+    },
+    {
+      "src": "icons/icon-158x158.jpeg",
+      "sizes": "158x158",
+      "type": "image/jpeg"
+    },
+  ]
+  "lang": "en"
+}
