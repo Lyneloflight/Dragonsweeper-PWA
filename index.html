@@ -2,14 +2,25 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Test Page</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="manifest" href="manifest.json">
+  <title>Dragonsweeper</title>
 </head>
 <body>
-  <h1>If you see this, basic HTML is working</h1>
-  <pre id="log">If this line disappears, JS ran</pre>
+  <h1>JS Functional</h1>
 
+  <script src="game.js"></script>
+  <script src="gamelib.js"></script>
   <script>
-    document.getElementById('log').textContent = 'JS executed!';
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.register('/service-worker.js')
+        .then(function(registration) {
+          console.log('Service Worker registered with scope:', registration.scope);
+        })
+        .catch(function(error) {
+          console.log('Service Worker registration failed:', error);
+        });
+    }
   </script>
 </body>
 </html>
