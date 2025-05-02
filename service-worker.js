@@ -1,16 +1,15 @@
 const CACHE_NAME = 'my-cache-v1';
 const CACHE_FILES = [
-  '/',
-  '/index.html',
-  '/manifest.json',
-  '/service-worker.js',
-  '/icons/icon-15x15.jpeg',
-  '/icons/icon-16x16.jpeg',
-  '/icons/icon-32x32.jpeg',
-  '/icons/icon-132x132.jpeg',
-  '/icons/icon-158x158.jpeg',
-  '/game.js',
-  '/gamelib.js'
+  'index.html',
+  'manifest.json',
+  'service-worker.js',
+  'icons/icon-15x15.jpeg',
+  'icons/icon-16x16.jpeg',
+  'icons/icon-32x32.jpeg',
+  'icons/icon-132x132.jpeg',
+  'icons/icon-158x158.jpeg',
+  'game.js',
+  'gamelib.js'
 ];
 
 self.addEventListener('install', (event) => {
